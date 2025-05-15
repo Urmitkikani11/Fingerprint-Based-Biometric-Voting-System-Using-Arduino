@@ -1,18 +1,20 @@
 # 🗳️ Fingerprint-Based Biometric Voting System Using Arduino
 
-A secure and interactive voting system that uses **fingerprint authentication** for voter validation and ensures **one person, one vote**. This Arduino-based project combines biometric security with user-friendly feedback through an LCD, buzzer, and LEDs.
+A secure and interactive voting system that uses **fingerprint authentication** to validate voters and ensure **one person, one vote**. Built with Arduino, this system integrates biometric security with user-friendly features like an LCD interface, buzzer, and LED indicators.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 ---
 
 ## 🔐 Features
 
-- **Fingerprint Sensor Integration** (Adafruit Fingerprint)
-- **LCD Feedback** via I2C 16x2 Display
-- **One-Time Voting** using voter ID check
-- **Real-Time Vote Count Tracking**
-- **Buzzer Alerts** for invalid attempts or confirmations
-- **LED Indicators**: Yellow (voting), Green (success)
-- **Buttons for Voting** (3 candidates), Enrollment, Confirmation, and Result viewing
+- ✅ **Fingerprint Sensor Integration** (Adafruit Fingerprint)
+- 📺 **LCD Feedback** via I2C 16x2 Display
+- 🔐 **One-Time Voting** using voter ID check
+- 📊 **Real-Time Vote Count Tracking**
+- 🚨 **Buzzer Alerts** for invalid or confirmed attempts
+- 💡 **LED Indicators**: Yellow (voting in progress), Green (successful vote)
+- 🎛️ **Voting Buttons** for 3 candidates + controls for enrollment, confirmation, and result viewing
 
 ---
 
@@ -22,36 +24,36 @@ A secure and interactive voting system that uses **fingerprint authentication** 
 |------------------------|----------|
 | Arduino Uno            | 1        |
 | Fingerprint Sensor     | 1        |
-| I2C 16x2 LCD           | 1        |
+| I2C 16x2 LCD Display   | 1        |
 | Push Buttons           | 6        |
 | Buzzer                 | 1        |
 | LEDs (Green, Yellow)   | 2        |
-| Jumper Wires           | -        |
+| Jumper Wires           | –        |
 | Breadboard             | 1        |
 
 ---
 
 ## 🔧 Functional Overview
 
-- **Enroll New Voters** using the fingerprint sensor (up to 127 IDs)
-- **Authenticate Voter Identity** before voting
-- **Prevent Duplicate Voting** with fingerprint and tracking
-- **Vote for 1 of 3 Candidates** via dedicated buttons
-- **Display Winner** with majority votes
-- **Visual & Audible Feedback** for every action
+- 📇 **Enroll New Voters** using the fingerprint sensor (supports up to 127 users)
+- ✅ **Authenticate Voter Identity** before allowing vote
+- 🚫 **Prevent Duplicate Voting** using fingerprint + internal tracking
+- 🗳️ **Vote for 1 of 3 Candidates** via dedicated buttons:
+  - Button 1 → Charlie
+  - Button 2 → Alice
+  - Button 3 → Bob
+- 📺 **Display Winner** after all voting
+- 🎉 **Visual & Audible Feedback** for every action
 
 ---
 
 ## 🧠 Logic Flow
 
-1. Enroll voter fingerprint (`Enroll` button)
-2. Confirm to start vote (`Confirm` button)
-3. Authenticate fingerprint and allow voting if valid
-4. Use voting buttons to cast vote for:
-   - `Charlie` (Button 1)
-   - `Alice` (Button 2)
-   - `Bob` (Button 3)
-5. View result using `Result` button
+1. Press `Enroll` to register a fingerprint.
+2. Press `Confirm` to initiate vote.
+3. Authenticate fingerprint — vote allowed only once per voter.
+4. Cast vote via one of the 3 candidate buttons.
+5. Press `Result` to view the current winner.
 
 ---
 
@@ -65,29 +67,41 @@ A secure and interactive voting system that uses **fingerprint authentication** 
 
 ## 🔒 Security Features
 
-- Fingerprint-based voter ID prevents impersonation
-- Voting only allowed if user has not voted before
-- Voter status tracked using an internal array
-- Enforced 10-second timeout window for vote casting
+- 🔐 Fingerprint-based voter ID to prevent impersonation
+- 🚫 Duplicate vote detection
+- 🧠 Voter status stored in internal array
+- ⏱️ 10-second timeout window for casting vote
 
 ---
 
 ## 📜 Result Logic
 
-- Displays candidate with highest votes
-- If tied, displays `"Winner: Tie"`
+- ✅ Displays candidate with the highest vote count
+- ⚖️ In case of tie, shows: `"Winner: Tie"`
+
+---
+
+## 🗂️ File Links
+
+- 📄 [Project Report (PDF)](../Report/22BEC137_ASSIGNMENT_ES.pdf)
+- 💾 [Source Code (Arduino Sketch)](../CODE/Arduino_Code.ino)
 
 ---
 
 ## 📝 Notes
 
-- Make sure `Adafruit_Fingerprint` library is installed
-- Uses `SoftwareSerial` on pins 8 (TX) and 9 (RX)
-- LCD uses I2C interface on address `0x27`
+- Ensure the `Adafruit_Fingerprint` library is installed
+- `SoftwareSerial` is used on pins 8 (TX) and 9 (RX)
+- LCD is connected via I2C at address `0x27`
+
+---
+
+## 📩 Contact
+
+For questions or collaboration: [📧 Send me an email](mailto:yourname@example.com)
 
 ---
 
 ## 📄 License
 
-This project is open-source and developed for educational purposes. Feel free to adapt, enhance, and share.
-
+This project is licensed under the [MIT License](./LICENSE) – free to use, modify, and distribute for educational purposes.
