@@ -8,13 +8,13 @@ A secure and interactive voting system that uses **fingerprint authentication** 
 
 ## 🔐 Features
 
-- ✅ **Fingerprint Sensor Integration** (Adafruit Fingerprint)
-- 📺 **LCD Feedback** via I2C 16x2 Display
-- 🔐 **One-Time Voting** using voter ID check
-- 📊 **Real-Time Vote Count Tracking**
-- 🚨 **Buzzer Alerts** for invalid or confirmed attempts
-- 💡 **LED Indicators**: Yellow (voting in progress), Green (successful vote)
-- 🎛️ **Voting Buttons** for 3 candidates + controls for enrollment, confirmation, and result viewing
+-  **Fingerprint Sensor Integration** (Adafruit Fingerprint)
+-  **LCD Feedback** via I2C 16x2 Display
+-  **One-Time Voting** using voter ID check
+-  **Real-Time Vote Count Tracking**
+-  **Buzzer Alerts** for invalid or confirmed attempts
+-  **LED Indicators**: Yellow (voting in progress), Green (successful vote)
+-  **Voting Buttons** for 3 candidates + controls for enrollment, confirmation, and result viewing
 
 ---
 
@@ -35,15 +35,15 @@ A secure and interactive voting system that uses **fingerprint authentication** 
 
 ## 🔧 Functional Overview
 
-- 📇 **Enroll New Voters** using the fingerprint sensor (supports up to 127 users)
-- ✅ **Authenticate Voter Identity** before allowing vote
-- 🚫 **Prevent Duplicate Voting** using fingerprint + internal tracking
-- 🗳️ **Vote for 1 of 3 Candidates** via dedicated buttons:
+-  **Enroll New Voters** using the fingerprint sensor (supports up to 127 users)
+-  **Authenticate Voter Identity** before allowing vote
+-  **Prevent Duplicate Voting** using fingerprint + internal tracking
+-  **Vote for 1 of 3 Candidates** via dedicated buttons:
   - Button 1 → Charlie
   - Button 2 → Alice
   - Button 3 → Bob
-- 📺 **Display Winner** after all voting
-- 🎉 **Visual & Audible Feedback** for every action
+-  **Display Winner** after all voting
+-  **Visual & Audible Feedback** for every action
 
 ---
 
@@ -67,17 +67,17 @@ A secure and interactive voting system that uses **fingerprint authentication** 
 
 ## 🔒 Security Features
 
-- 🔐 Fingerprint-based voter ID to prevent impersonation
-- 🚫 Duplicate vote detection
-- 🧠 Voter status stored in internal array
-- ⏱️ 10-second timeout window for casting vote
+-  Fingerprint-based voter ID to prevent impersonation
+-  Duplicate vote detection
+-  Voter status stored in internal array
+-  10-second timeout window for casting vote
 
 ---
 
 ## 📜 Result Logic
 
-- ✅ Displays candidate with the highest vote count
-- ⚖️ In case of tie, shows: `"Winner: Tie"`
+-  Displays candidate with the highest vote count
+-  In case of tie, shows: `"Winner: Tie"`
 
 ---
 
