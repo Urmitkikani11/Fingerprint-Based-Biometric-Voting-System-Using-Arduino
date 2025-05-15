@@ -2,7 +2,7 @@
 
 A secure and interactive voting system that uses **fingerprint authentication** to validate voters and ensure **one person, one vote**. Built with Arduino, this system integrates biometric security with user-friendly features like an LCD interface, buzzer, and LED indicators.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](LICENSE)
 
 ---
 
