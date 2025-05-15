@@ -2,7 +2,7 @@
 
 A secure and interactive voting system that uses **fingerprint authentication** to validate voters and ensure **one person, one vote**. Built with Arduino, this system integrates biometric security with user-friendly features like an LCD interface, buzzer, and LED indicators.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
 
@@ -81,27 +81,19 @@ A secure and interactive voting system that uses **fingerprint authentication** 
 
 ---
 
-## 🗂️ File Links
+## 📁 Project Files
 
-- 📄 [Project Report (PDF)](../Report/22BEC137_ASSIGNMENT_ES.pdf)
-- 💾 [Source Code (Arduino Sketch)](../CODE/Arduino_Code.ino)
-
----
-
-## 📝 Notes
-
-- Ensure the `Adafruit_Fingerprint` library is installed
-- `SoftwareSerial` is used on pins 8 (TX) and 9 (RX)
-- LCD is connected via I2C at address `0x27`
+- 📄 [📘 Report PDF](./Report/22BEC137_ASSIGNMENT_ES.pdf)
+- 💾 [💡 Arduino Code](./CODE/Arduino_Code.ino)
 
 ---
 
 ## 📩 Contact
 
-For questions or collaboration: [📧 Send me an email](mailto:yourname@example.com)
+For questions or collaboration: [📧 Urmitkikani1184@gmail.com](mailto:Urmitkikani1184@gmail.com)
 
 ---
 
 ## 📄 License
 
-This project is licensed under the [MIT License](./LICENSE) – free to use, modify, and distribute for educational purposes.
+This project is licensed under the [MIT License](LICENSE) – free to use, modify, and distribute for educational purposes.
