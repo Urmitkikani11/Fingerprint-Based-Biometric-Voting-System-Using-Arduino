@@ -83,8 +83,8 @@ A secure and interactive voting system that uses **fingerprint authentication** 
 
 ## 📁 Project Files
 
-- 📄 [📘 Report PDF](./Report/22BEC137_ASSIGNMENT_ES.pdf)
-- 💾 [💡 Arduino Code](./CODE/Arduino_Code.ino)
+- 📄 [ Report PDF](./Report/22BEC137_ASSIGNMENT_ES.pdf)
+- 💾 [ Arduino Code](./CODE/Arduino_Code.ino)
 
 ---
 
